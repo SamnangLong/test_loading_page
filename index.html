@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@100&family=Moul&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js" type="text/javascript"></script> 
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Testing Button</h1>
+<!-- Your button HTML -->
+<button id="button1" onclick="button1()">Button 1</button>
+<button id="button2" onclick="button2()">Button 2</button>
+<button id="button3" onclick="button3()">Button 3</button>
+
+<button id="resetButton" onclick="resetButton()">Reset All Button</button>
+
+<div id="overlay" class="overlay">
+    <div class="overlay-content">
+      <div class="loader">
+        <div class="loader__circle"></div>
+        <div class="loader__circle"></div>
+        <div class="loader__circle"></div>
+        <div class="loader__circle"></div>
+      </div>
+      <button class="cancel-btn" id="cancelBtn">Cancel</button>
+</div>
+
+
+</body>
+</html>
